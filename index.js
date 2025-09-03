@@ -10,7 +10,7 @@ const URI = process.env.MONGO_URI
 
 mongoose.connect(URI)
             .then(() => {
-                console.log("Conectado a la base de datos (DB)")
+                console.log("Conectado a la base de datos (DB). Prueba de conexión exitosa.")
 
                 app.listen(PORT, () => {
                     console.log(`Servidor funcionando en el puerto ${PORT}`)
